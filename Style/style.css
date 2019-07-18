@@ -32,13 +32,6 @@ header {
     background: url('../img/logo.png') 0 0 no-repeat;
 }
 
-@media screen and (min-resolution: 144dpi) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
-    .logo-link {
-        background: url('../img_retina/logo@2x.png') 0 0 no-repeat ;
-        background-size: 183px 100px;
-    }
-}
-
 .mail {
     font-family: Arial;
     font-size: 13px;
@@ -186,7 +179,7 @@ header {
     border-bottom: 1px solid #c0c0c0;
 }
 
-.head_portfolio {
+.head_block {
     margin: 20px 0 20px 0;
     display: flex;
     text-transform: uppercase;
@@ -217,4 +210,106 @@ header {
 .link_pic a > img {
     width: 62px;
     height: 21px;
+}
+
+.blog_and_connect {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.blog_and_connect h2 {
+    font-size: 12px;
+}
+
+.blog {
+    height: 93px;
+    width: 668px;
+    margin-bottom: 45px;
+}
+
+.blog p {
+    margin-top: 30px;
+    font-size: 12px;
+    text-align: left;
+    line-height: 14px;
+    color: #5d5d5d;
+}
+
+.connect {
+    width: 172px;
+    height: 66px;
+    margin: 0 47px 73px 86px;
+}
+
+.socialNet {
+    display: flex;
+    margin: 23px auto 0;
+    justify-content: space-between;
+}
+
+.socialNet img {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-site {
+    height: 100px;
+    width: 100%;
+    background-color: #e4e4e4;
+}
+
+.footer_content {
+    height: 100px;
+    width: 960px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_left {
+    height: 33px;
+    width: 338px;
+    margin-top: 33px;
+    font-size: 12px;
+    text-align: left;
+    color: #5d5d5d;
+}
+
+.footer_left nav > a {
+    margin-right: 6px;
+    padding-right: 6px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #5d5d5d;
+    text-decoration: none;
+    border-right: 1px solid #5d5d5d;
+}
+
+.footer_left nav > a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+
+.footer_left p {
+    margin-top: 8px;
+}
+
+.logo-footer img {
+    width: 118px;
+    height: 65px;
+    margin-top: 19px;
+}
+
+
+@media screen and (min-resolution: 144dpi) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
+    .logo-link {
+        background: url('../img_retina/logo@2x.png') 0 0 no-repeat ;
+        background-size: 960px 380px;
+    }
+
+    .baner {
+        background: url('../img_retina/baner@2x.jpg') 0 0 no-repeat ;
+        background-size: 183px 100px;
+    }
 }
