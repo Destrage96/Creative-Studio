@@ -3,6 +3,8 @@
     <head>
         <link rel="stylesheet" href="Style/reset.css">
         <link rel="stylesheet" href="Style/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="JS/script.js"></script>
         <meta charset="UTF-8">
         <title>Creative Studio</title>
     </head>
@@ -16,12 +18,13 @@
                     <a href="mailto:info@CreativeStudio.com" class="mail">info@CreativeStudio.com</a>
 
                     <nav class="nav">
-                        <a href="#" class="nav-link">home</a>
-                        <a href="#" class="nav-link">about us</a>
-                        <a href="#" class="nav-link">portfolio</a>
-                        <a href="#" class="nav-link">services</a>
-                        <a href="#" class="nav-link">blog</a>
-                        <a href="#" class="nav-link">contact us</a>
+                        <a href="#" class="nav-link navFull">home</a>
+                        <a href="#" class="nav-link navFull">about us</a>
+                        <a href="#" class="nav-link navFull">portfolio</a>
+                        <a href="#" class="nav-link navFull">services</a>
+                        <a href="#" class="nav-link navFull">blog</a>
+                        <a href="#" class="nav-link navFull">contact us</a>
+                        <a href="#" id="menu" class="icon nav-link">&#9776;</a>
                     </nav>
                 </header>
 
@@ -37,7 +40,7 @@
                     <div class="content_card">
                         <div class="head_card">
                             <img src="img/arr-black.png" srcset="img_retina/arr-black@2x.png" alt="" class="arr-black">
-                            <h2>about us</h2>
+                            <a href="#" class="cardName"><h2>about us</h2></a> 
                         </div>
 
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobortis scelerisque. Praesent eget consequat libero.</p>
@@ -47,18 +50,18 @@
                     <div class="content_card">
                         <div class="head_card">
                             <img src="img/arr-black.png" srcset="img_retina/arr-black@2x.png" alt="" class="arr-black">
-                            <h2>our Benefits</h2>
+                            <a href="#" class="cardName"><h2>our Benefits</h2></a>   
                         </div>
 
-                        <span class="checkbox_text"><img src="img/checkbox.jpg" srcset="img_retina/checkbox@2x.png" alt="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa.</span> 
-                        <span class="checkbox_text"><img src="img/checkbox.jpg" srcset="img_retina/checkbox@2x.png" alt="">Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobortis scelerisque. Praesent eget consequat</span> 
-                        <span class="checkbox_text"><img src="img/checkbox.jpg" srcset="img_retina/checkbox@2x.png" alt="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa.</span> 
+                        <span class="checkbox_text"><img src="img/checkbox.jpg" srcset="img_retina/checkbox@2x.jpg" alt="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa.</span> 
+                        <span class="checkbox_text"><img src="img/checkbox.jpg" srcset="img_retina/checkbox@2x.jpg" alt="">Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobortis scelerisque. Praesent eget consequat</span> 
+                        <span class="checkbox_text"><img src="img/checkbox.jpg" srcset="img_retina/checkbox@2x.jpg" alt="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa.</span> 
                     </div>
 
                     <div class="content_card">
                         <div class="head_card">
                             <img src="img/arr-black.png" srcset="img_retina/arr-black@2x.png" alt="" class="arr-black">
-                            <h2>testimonials</h2>
+                            <a href="#" class="cardName"><h2>testimonials</h2></a>   
                         </div>
 
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobortis scelerisque.</p> 
@@ -69,27 +72,47 @@
                 <div class="portfolio">
                     <div class="head_block">
                         <img src="img/arr-black.png" srcset="img_retina/arr-black@2x.png" alt="" class="arr-black">
-                        <h2>our portfolio</h2>
+                        <a href="#"><h2>our portfolio</h2></a>   
                     </div>
 
                     <div class="pic">
                         <div class="link_pic">
-                            <a href="#" class="view_pic"><img src="img/view.jpg" srcset="img_retina/view@2x.png" alt=""></a>
+                            <a href="#" class="view_pic"><img src="img/view.jpg" srcset="img_retina/view@2x.jpg" alt=""></a>
                             <img src="img/pic_1.jpg" srcset="img_retina/pic_1@2x.jpg" alt="" class="pic_img">
                         </div>
 
                         <div class="link_pic">
-                            <a href="#" class="view_pic"><img src="img/view.jpg" srcset="img_retina/view@2x.png" alt=""></a>
+                            <a href="#" class="view_pic"><img src="img/view.jpg" srcset="img_retina/view@2x.jpg" alt=""></a>
                             <img src="img/pic_2.jpg" srcset="img_retina/pic_2@2x.jpg" alt="" class="pic_img">
                         </div>
 
                         <div class="link_pic">
-                            <a href="#" class="view_pic"><img src="img/view.jpg" srcset="img_retina/view@2x.png" alt=""></a>
+                            <a href="#" class="view_pic"><img src="img/view.jpg" srcset="img_retina/view@2x.jpg" alt=""></a>
                             <img src="img/pic_3.jpg" srcset="img_retina/pic_3@2x.jpg" alt="" class="pic_img">
                         </div>
 
                         <div class="link_pic">
-                            <a href="#" class="view_pic"><img src="img/view.jpg" srcset="img_retina/view@2x.png" alt=""></a>
+                            <a href="#" class="view_pic"><img src="img/view.jpg" srcset="img_retina/view@2x.jpg" alt=""></a>
+                            <img src="img/pic_4.jpg" srcset="img_retina/pic_4@2x.jpg" alt="" class="pic_img"> 
+                        </div>
+
+                        <div class="link_pic">
+                            <a href="#" class="view_pic"><img src="img/view.jpg" srcset="img_retina/view@2x.jpg" alt=""></a>
+                            <img src="img/pic_1.jpg" srcset="img_retina/pic_1@2x.jpg" alt="" class="pic_img">
+                        </div>
+
+                        <div class="link_pic">
+                            <a href="#" class="view_pic"><img src="img/view.jpg" srcset="img_retina/view@2x.jpg" alt=""></a>
+                            <img src="img/pic_2.jpg" srcset="img_retina/pic_2@2x.jpg" alt="" class="pic_img">
+                        </div>
+
+                        <div class="link_pic">
+                            <a href="#" class="view_pic"><img src="img/view.jpg" srcset="img_retina/view@2x.jpg" alt=""></a>
+                            <img src="img/pic_3.jpg" srcset="img_retina/pic_3@2x.jpg" alt="" class="pic_img">
+                        </div>
+
+                        <div class="link_pic">
+                            <a href="#" class="view_pic"><img src="img/view.jpg" srcset="img_retina/view@2x.jpg" alt=""></a>
                             <img src="img/pic_4.jpg" srcset="img_retina/pic_4@2x.jpg" alt="" class="pic_img"> 
                         </div>
                     </div>
@@ -99,7 +122,7 @@
                     <div class="blog">
                         <div class="head_block">
                             <img src="img/arr-black.png" srcset="img_retina/arr-black@2x.png" alt="" class="arr-black">
-                            <h2>blog updates</h2>
+                            <a href="#"><h2>blog updates</h2></a>   
                         </div>
 
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobortis scelerisque. Praesent eget consequat libero. </p>
@@ -108,14 +131,14 @@
                     <div class="connect">
                         <div class="head_block">
                             <img src="img/arr-black.png" srcset="img_retina/arr-black@2x.png" alt="" class="arr-black">
-                            <h2>connect with us</h2>
+                            <a href="#"><h2>connect with us</h2></a>   
                         </div>
 
                         <div class="socialNet">
-                            <img src="img/twitter.png" srcset="img_retina/twitter@2x.png" alt="">
-                            <img src="img/facebook.png" srcset="img_retina/facebook@2x.png" alt="">
-                            <img src="img/Flickr.png" srcset="img_retina/Flickr@2x.png" alt="">
-                            <img src="img/social.png" srcset="img_retina/social@2x.png" alt="">
+                            <a href="#"><img src="img/twitter.png" srcset="img_retina/twitter@2x.png" alt=""></a>   
+                            <a href="#"><img src="img/facebook.png" srcset="img_retina/facebook@2x.png" alt=""></a>   
+                            <a href="#"><img src="img/Flickr.png" srcset="img_retina/Flickr@2x.png" alt=""></a>   
+                            <a href="#"><img src="img/social.png" srcset="img_retina/social@2x.png" alt=""></a>   
                         </div>
                     </div>
                 </div>
